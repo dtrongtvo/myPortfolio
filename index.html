@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__navContainer container center">
+        <div class="navbar">
+          <p class="logo">
+            <span class="logo__name">Thai Vo Duc Trong</span> Portfolio
+          </p>
+          <ul class="nav">
+            <li class="nav__item"><a href="#">Work</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner__title">
+          <h1>Hi! I'm Trong</h1>
+          <h1>I'm a UX/UI designer in training</h1>
+        </div>
+        <div class="overlayModal"></div>
+      </section>
+
+      <!-- Works -->
+      <section class="myWorks">
+        <div class="container">
+          <!-- Landing pages -->
+          <div class="works__landingPages">
+            <h2>Landing pages</h2>
+            <div class="works">
+              <!-- Omnifood -->
+              <a
+                target="blank"
+                href="https://omnifood-dtrongtvo.netlify.app/"
+                class="works__item works__item--omnifood"
+              >
+                <div class="item__modal"></div>
+                <h3 class="item__title">Omnifood</h3>
+              </a>
+              <!-- Bake -->
+              <a
+                target="blank"
+                href="https://dtrongtvo.github.io/bake/"
+                class="works__item works__item--bake"
+              >
+                <div class="item__modal"></div>
+                <h3 class="item__title">Bake</h3>
+              </a>
+              <!-- Sunny side -->
+              <a
+                target="blank"
+                href="https://sunnyside-dtrongtvo.netlify.app/"
+                class="works__item works__item--sunny"
+              >
+                <div class="item__modal"></div>
+                <h3 class="item__title">Sunny side</h3>
+              </a>
+            </div>
+          </div>
+          <div class="works__UX">
+            <h2>UX/UI Case study</h2>
+            <div class="works">
+              <!-- Coffeasy -->
+              <a
+                target="blank"
+                href="#"
+                class="works__item works__item--coffeasy"
+              >
+                <div class="item__modal"></div>
+                <h3 class="item__title">Coffeasy</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
