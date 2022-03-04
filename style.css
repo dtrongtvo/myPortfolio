@@ -28,9 +28,9 @@ body {
 }
 
 h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-bottom: 3.6rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
 }
 
 /* HEADER & NAVBAR */
@@ -77,11 +77,13 @@ h2 {
   position: relative;
   background-image: url(./img/bg.png);
   background-size: cover;
-  background-position: position: fixed;
+  background-position: fixed;
 }
 
 .banner__title {
-  font-size: 3.2rem;
+  width: 40%;
+  line-height: 1.2;
+  font-size: 2.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,71 +93,77 @@ h2 {
 
 /* WORKS */
 .myWorks {
-    padding: 4.8rem 0;
+  padding: 4.8rem 0;
 }
 
 .works__landingPages {
-    margin-bottom: 6.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .works {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
 }
 
 .works__item {
-    position: relative;
-    overflow: hidden;
-    height: 27rem;
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  height: 27rem;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .works__item--omnifood {
-    background-image: url(./img/omni.png);
+  background-image: url(./img/omni.png);
 }
 
 .works__item--bake {
-    background-image: url(./img/bake.png);
+  background-image: url(./img/bake.png);
 }
 
 .works__item--sunny {
-    background-image: url(./img/sunny.png);
+  background-image: url(./img/sunny.png);
 }
 
 .works__item--coffeasy {
-    background-image: url(./img/coffeasy.png);
+  background-image: url(./img/coffeasy.png);
 }
 
 .item__modal {
-    background-color: rgba(53, 205, 243, 0.9);
-    height: 100%;
-    width: 175%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-    transform: skew(-45deg) translateX(-125%);
+  background-color: rgba(53, 205, 243, 0.9);
+  height: 100%;
+  width: 175%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: skew(-45deg) translateX(-125%);
 }
 
 .works__item:hover .item__modal {
-    transform: skew(-45deg) translateX(-25%);
+  transform: skew(-45deg) translateX(-25%);
 }
 
 .works__item:hover .item__title {
-    opacity: 1;
+  opacity: 1;
 }
 
 .item__title {
-    font-size: 2.8rem;
-    color: #fff;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0;
-    transition: all .5s;
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.item__desc {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
