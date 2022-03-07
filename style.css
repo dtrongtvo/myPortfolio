@@ -24,13 +24,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  font-size: 4.8rem;
 }
 
 h2 {
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 3.6rem;
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  background-color: #35cdf3;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+  border: 2px solid #35cdf3;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #35cdf3;
 }
 
 /* HEADER & NAVBAR */
@@ -43,6 +63,7 @@ h2 {
 
 .logo {
   font-size: 2rem;
+  color: #131313;
 }
 
 .logo__name {
@@ -77,10 +98,10 @@ h2 {
   position: relative;
   background-image: url(./img/bg.png);
   background-size: cover;
-  background-position: fixed;
 }
 
 .banner__title {
+  text-align: center;
   width: 40%;
   line-height: 1.2;
   font-size: 2.4rem;
@@ -93,7 +114,7 @@ h2 {
 
 /* WORKS */
 .myWorks {
-  padding: 4.8rem 0;
+  padding: 4.8rem 2.4rem;
 }
 
 .works__landingPages {
@@ -103,7 +124,7 @@ h2 {
 .works {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .works__item {
@@ -113,6 +134,8 @@ h2 {
   width: 100%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  background-position: center;
+  transition: all 0.5s;
 }
 
 .works__item--omnifood {
@@ -142,6 +165,11 @@ h2 {
   transform: skew(-45deg) translateX(-125%);
 }
 
+.works__item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .works__item:hover .item__modal {
   transform: skew(-45deg) translateX(-25%);
 }
@@ -166,4 +194,110 @@ h2 {
 .item__desc {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/* ABOUT PAGE */
+/* AVA */
+.avaBanner {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
+.avaBanner img {
+  width: 100%;
+}
+
+.avaBanner__shortDesc {
+  padding: 4rem 0 4.8rem 4rem;
+}
+
+.avaBanner__subtitle {
+  font-size: 6.4rem;
+  color: rgb(53, 205, 243, 0.4);
+}
+
+.avaBanner__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: ;
+}
+
+.aboutMe {
+  padding: 4.8rem 0 7.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe__desc {
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+}
+
+.aboutMe__note {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 2.4rem;
+  border-top: 1px solid #ababab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+footer p {
+  font-size: 1.4rem;
+  color: #ababab;
+}
+
+.contact {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.contact__email {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2.8rem;
+  /* margin-bottom: 1.6rem; */
+}
+
+.contact__email a {
+  font-size: 1.6rem;
+  color: #131313;
+  transition: all 0.5s;
+}
+
+.contact__email a:hover {
+  color: #35cdf3;
+}
+
+.contact__social {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.social__item {
+  color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #131313;
+  transition: all 0.5s;
+}
+
+.social__item:hover {
+  color: #4267b2;
 }
