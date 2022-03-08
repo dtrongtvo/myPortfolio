@@ -1,0 +1,59 @@
+@media (max-width: 75em) {
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .avaBanner__subtitle {
+    font-size: 4.8rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .avaBanner__shortDesc {
+    padding: 3.6rem 0 4rem 3.6rem;
+  }
+  .aboutMe {
+    padding: 4rem 0 6.4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  .avaBanner__shortDesc {
+    padding: 2.4rem 0 3.6rem 2.4rem;
+  }
+}
+
+@media (max-width: 36em) {
+  html {
+    font-size: 43.75%;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  .banner__title {
+    width: 70%;
+  }
+  .banner__title p {
+    font-size: 1.8rem;
+  }
+  .works {
+    grid-template-columns: 1fr;
+  }
+  .avaBanner {
+    grid-template-columns: 1fr;
+  }
+  .avaBanner__subtitle {
+    text-align: center;
+  }
+  .avaBanner__shortDesc {
+    padding: 2.4rem 0 3.6rem;
+  }
+  .aboutMe {
+    padding: 0 0 4.8rem;
+  }
+}
