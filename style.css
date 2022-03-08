@@ -214,7 +214,6 @@ h2 {
 /* ABOUT PAGE */
 /* AVA */
 .avaBanner {
-  padding: 0 2.4rem;
   display: grid;
   grid-template-columns: 4fr 8fr;
 }

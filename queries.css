@@ -6,6 +6,10 @@
     font-size: 56.25%;
   }
 
+  .avaBanner {
+    padding: 0 2.4rem;
+  }
+
   .avaBanner__subtitle {
     font-size: 4.8rem;
     margin-bottom: 2.8rem;
