@@ -56,6 +56,10 @@ h2 {
 /* HEADER & NAVBAR */
 .header {
   padding: 0 2.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .header__navContainer {
@@ -140,6 +144,7 @@ h2 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   background-position: center;
+  background-size: cover;
   transition: all 0.5s;
 }
 
@@ -157,6 +162,10 @@ h2 {
 
 .works__item--coffeasy {
   background-image: url(./img/coffeasy.png);
+}
+
+.works__item--watchmecode {
+  background-image: url(./img/watchmecode.png);
 }
 
 .item__modal {
